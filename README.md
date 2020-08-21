@@ -18,11 +18,11 @@ rolling back the change with minimul effort or risk.
 2. Insert the demo data by running INSERT_DATA.sql.
 
     You should now have a Facebook and a Toggles database.
-    The Toggles database should have a Feature table containing a single row of data (a feature called 'live buttons')
+    The Toggles database should have a Feature table containing a single row of data (a feature called 'live buttons').
     The Facebook database should have two tables, Relationship and User. Each should be populated with sample data.
     The Facebook database should have a stored procedure called FriendsOf, which can return either an old (fast but 
         basic) or a new (slow but detailed) versions of a report on a given users friends.
-    If you would like to experiment with more/less test data you can user the Redgate SQL Data Generator file to experiment
+    If you would like to experiment with more/less test data you can use the Redgate SQL Data Generator file to experiment
         with different sized datasets. (SQL Data Generator comes with a free trial licence, but if you've used it you'll
         need a licence.)
    
