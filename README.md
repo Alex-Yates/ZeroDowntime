@@ -45,7 +45,8 @@ rolling back the change with minimul effort or risk.
        Even worse, this Cursor includes the line:
               WAITFOR DELAY''00:00:00.200'';
        Either delete or comment out this line.
-7. Try re-running the sproc. This time it should run faster. Throttle back up to 100. Now the code should run nice and 
-       fast every time, while running the new code in the background.
+7. Try re-running the sproc and check the messages to verify whether you ran the old or new version of the code. (Remember, 
+       you are still throttled at 50%!) This time it should run faster. Throttle back up to 100. Now the code should run nice 
+       and fast every time, while running the new code in the background.
 8. Enable the feature by going back to Toggles.dbo.Feature and flip Enabled from a 0 to a 1 for the 'live buttons feature.
 9. Re-run the procedure one more time. Now it should not only run quickly, but it should also return a much richer dataset.
