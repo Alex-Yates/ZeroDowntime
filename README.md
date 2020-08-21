@@ -6,7 +6,7 @@ You are trying to build a new feature, but you are concerned about performance. 
 to deploy the code to production, but to hide it behind a Feature Toggle / Feature Flag. This will allow you to test
 the performance of your code, on production workloads, before you expose it to your users. It will also make it really
 easy to enable, disable or throttle the new code based on performance so you can easily roll it back or throttle it 
-down avoid crashing the server while you try to improve performance.
+down to avoid crashing the server while you try to improve performance.
 
 If all goes well, you should be able to monitor your improvements based on rich feedback from production. By the time 
 you are ready to enable the feature in production, and expose it to your users, you should be highly confident that
