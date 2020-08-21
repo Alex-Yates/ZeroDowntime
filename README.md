@@ -40,8 +40,8 @@ rolling back the change with minimul effort or risk.
        the Throttle to 50. Now only 50% of executions will run the new, poor performing code. Try running the sproc again 
        and note that 50% of the time it runs fast and 50% of the time it runs slowly. You can also check the messages to
        confirm which version of the code was executed.
-6. Now tune the query. Observe that the the FriendsOf stored procedure uses dynamic SQL to switch between the new and the
-       old version of the code. Roughly halfway throught the script is the @NewSql script which contains a dreaded cursor.
+6. Now tune the query. Observe that the FriendsOf stored procedure uses dynamic SQL to switch between the new and the old 
+       version of the code. Roughly halfway throught the script is the @NewSql script which contains a dreaded cursor.
        Even worse, this Cursor includes the line:
               WAITFOR DELAY''00:00:00.200'';
        Either delete or comment out this line.
