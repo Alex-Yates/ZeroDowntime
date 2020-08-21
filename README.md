@@ -36,7 +36,7 @@ rolling back the change with minimul effort or risk.
        stored procedure. This should run more slowly but return the same data. It's running the new code in the backgroud
        but only showing the original code.
 5. This performance won't do. If all the users are using the expensive version of the query you'll crash the server. You 
-       need to throttle down your dark launch which you tune the query. Go back to the Toggles.dbo.Feature table and set
+       need to throttle down your dark launch while you tune the query. Go back to the Toggles.dbo.Feature table and set
        the Throttle to 50. Now only 50% of executions will run the new, poor performing code. Try running the sproc again 
        and note that 50% of the time it runs fast and 50% of the time it runs slowly. You can also check the messages to
        confirm which version of the code was executed.
