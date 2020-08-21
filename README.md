@@ -49,5 +49,7 @@ rolling back the change with minimul effort or risk.
        you are still throttled at 50%!) This time it should run faster regardless of whether you are running the new or old 
        version of the code. Throttle back up to 100. You want to verify that the new code runs nice and fast every time, 
        even under full production load.
-8. Enable the feature by going back to Toggles.dbo.Feature and flip Enabled from a 0 to a 1 for the 'live buttons feature.
+8. When you are happy with the performance, and perhaps after you have imagined that you have let it run for a few days 
+       through your regular usage peaks, while continuously monitoring performance etc, you are ready to enable the feature 
+       for your users. Go back to Toggles.dbo.Feature and flip Enabled from a 0 to a 1 for the 'live buttons feature.
 9. Re-run the procedure one more time. Now it should not only run quickly, but it should also return a much richer dataset.
